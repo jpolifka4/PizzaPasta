@@ -1,0 +1,19 @@
+{
+  "name": "pizzapasta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Justin Polifka",
+  "license": "ISC",
+  "dependencies": {
+    "mime": "^2.5.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

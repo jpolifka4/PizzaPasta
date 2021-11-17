@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Order Pasta - Liberteri Italiano</title>
+    <!--[if IE 6]>
+      <link rel="stylesheet" type="text/css" href="css/ie6.css" />
+    <![endif]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/sweetalert.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <ul class="first">
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="menu.html">Everyday Menu</a></li>
+        </ul>
+        <div>
+          <a href="index.html"><img src="images/logo.jpg" alt="Logo"/></a>
+        </div>
+        <ul>
+          <li><a href="orders.html">Orders</a></li>
+				<li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 offset-sm-4">
+        <div class="section">
+          <form id="orderform">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastname"
+                placeholder="Your last name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="Your phone number"
+              />
+              <div class="form-group">
+                <label for="date">Order Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="date"
+                />
+            </div>
+            <h3 class="text-center">Pasta and Baked Pasta</h3>
+            <div class="row">
+              <div class="col-sm-6 offset-sm-3">
+                <div class="form-group">
+                  <label for="sel1">Select one:</label>
+                  <select class="form-control" id="style">
+                    <option value="tomato-sauce"
+                      >Spaghetti - Tomato Sauce (10.45)</option
+                    >
+                    <option value="garlic-oil"
+                      >Spaghetti - Garlic and Oil (10.45)</option
+                    >
+                    <option value="mushroom"
+                      >Spaghetti - Mushroom Sauce (11.75)</option
+                    >
+                    <option value="f-alfredo"
+                      >Fettuccine Alfredo (13.95)</option
+                    >
+                    <option value="f-primavera"
+                      >Fettuccine Primavera (13.05)</option
+                    >
+                    <option value="lasagna">Lasagna (11.95)</option>
+                    <option value="ravioli">Ravioli (10.99)</option>
+                    <option value="baked-ziti">Baked-Ziti (12.00)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div style="margin:20px;" class="text-center">
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="getPastaOrder()"
+              >
+                Place Order
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+        <ul>
+          <li id="pasta">
+            <div>
+              <span>Pasta</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                cursus, metus et vulputate bibendum, nisi velit luctus purus, a
+                mattis metus dui eu risus.
+              </p>
+            </div>
+          </li>
+          <li id="pizza">
+            <div>
+              <span>Pizza</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                cursus, metus et vulputate bibendum, nisi velit luctus purus, a
+                mattis metus dui eu risus.
+              </p>
+            </div>
+          </li>
+          <li id="callus">
+            <div>
+              <span>Call us now!</span>
+              <b>0934-475-59867</b>
+              <p>
+                <strong>Contact us at:</strong><br /><i
+                  >thechef@liberteri.com</i
+                >
+              </p>
+              <p>
+                <strong>Mail:</strong
+                ><span>4412 18th Ave SW<br />Naples. FL34116<br />USA</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <div>
+          <p>
+            &copy; Copyright &copy; 2018. Liberteri Italiano. All rights
+            reserved
+          </p>
+          <div>
+            <span>Get social <br />with us:</span>
+            <div>
+              <a
+                href="http://facebook.com/"
+                class="facebook"
+                target="_blank"
+              ></a>
+              <a href="#" class="linked-in" target="_blank"></a>
+              <a href="http://twitter.com/" class="twitter" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/sweetalert.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      window.onload = () => {
+        document.querySelector('#date').valueAsDate = new Date();
+      }
+    </script>
+  </body>
+</html>
